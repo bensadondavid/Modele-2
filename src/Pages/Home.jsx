@@ -14,7 +14,8 @@ function Home(){
     return(
 
         <div className="home">
-            
+            <img src="kol-sasson-blanc.png" className='kol-sasson'/>
+            <Houppa activeLanguage='francais'/>
         </div>
 
     )
