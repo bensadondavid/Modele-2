@@ -98,18 +98,16 @@
 /* Home */
 
 .home{
-    height: 160vh;
+    height: 400vh;
     width: 100%;
     background-image: url('/fond-orange.png');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .kol-sasson{
     height: 100px;
     width: 300px;
     display: block;
-    margin: auto;
+    margin: auto auto 50px auto;
 }
 
 
@@ -133,18 +131,27 @@
     align-items: center;
 }
 
-.fleur-bleue-droite, .fleur-bleue-gauche{
+.fleur-houppa-droite, .fleur-houppa-gauche{
     width: 100px;
     height: 110px;
 }
 
 .houppa-card{
     height: fit-content;
-    margin-top: 50px;
+    margin: 50px auto auto auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #D9D9D9;
+    color: #E46204;
+    background-color: #D9D9D9;
+    opacity: 0.8;
+    width: 90%;
+    border-top-left-radius: 50% 150px;
+    border-top-right-radius: 50% 150px;
+    border-bottom-right-radius: 50% 150px;
+    border-bottom-left-radius: 50% 150px;
+    padding-top: 85px;
+    padding-bottom: 80px;
 }
 
 .parents{

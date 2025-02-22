@@ -4,9 +4,9 @@ function Houppa(activeLanguage, handleLanguage){
 
         <div className="houppa">
             <div className="houppa-fleur">
-                    <img src="fleur-bleue-gauche.png" className='fleur-bleue-gauche' />
+                    <img src="fleur-houppa-gauche.png" className='fleur-houppa-gauche' />
                     <h1 className="houppa-titre">La Houppa</h1>
-                    <img src="fleur-bleue-droite.png" className="fleur-bleue-droite" />
+                    <img src="fleur-houppa-droite.png" className="fleur-houppa-droite" />
                 </div>
             <div className="houppa-card">
                 <div className="parents">
