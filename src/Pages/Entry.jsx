@@ -7,20 +7,14 @@ function Entry(activeLanguage, handleLanguage){
 
         <div className="entry">
             <p className="bsd">בס"ד</p>
-            <div className="logo-coutdown">
-                <img src="logo-dore.png" className="logo-entry" />
-                <CountDown />
-            </div>
-            <div className="voir-invit">
-                <div className="lien">
-                    <img src="fleur-gauche.png" className='fleur-gauche' />
-                    <Link to='/home'>Voir l'invitation</Link>
-                    <img src="fleur-droite.png" className='fleur-droite'/>
-                </div>
-                <img src="fleur-dore-bas.png" className='fleur-dore-bas' />
+            <img src="logo-orange.png" className="logo-entry" />
+            <CountDown />
+            <Link to='/home' className='entry-lien'><button className='invit-button'>Voir l'invitation</button></Link>
+            <div className="fleurs-entry">
+                <img src="fleur-entry-gauche.png" className='fleur-entry-gauche' />
+                <img src="fleur-entry-droite.png" className='fleur-entry-droite' />
             </div>
         </div>
-
     )
 }
 

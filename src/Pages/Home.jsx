@@ -14,11 +14,7 @@ function Home(){
     return(
 
         <div className="home">
-            <img src="kol-sasson-bleu.png" className="kol-sasson" />
-            <img src="logo-bleu.png" className="logo-bleu" />
-            <Houppa activeLanguage={'francais'}/>
-            <Chabat activeLanguage={'francais'}/>
-            <Form activeLanguage={'francais'}/>
+            
         </div>
 
     )
