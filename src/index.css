@@ -54,7 +54,7 @@
 .time{
     text-align: center;
     font-size: larger;
-    background-color: rgba(245, 245, 220,0.3);
+    background-color: #f5f5dc4d;
     border-radius: 50%;
     height: 80px;
     width: 80px;
@@ -69,13 +69,14 @@
 }
 
 .invit-button{
-    height: 50px;
-    width: 160px;
+    height: 60px;
+    width: 190px;
     margin-bottom: 80px;
-    background-color: transparent;
-    border: #E46204 solid 2px;
-    border-radius: 10px;
+    background-color: #f5f5dc4d;
+    border: none;
+    border-radius: 40px;
     color: #E46204;
+    font-size: medium;
 }
 
 .fleurs-entry{
@@ -98,9 +99,11 @@
 /* Home */
 
 .home{
-    height: 400vh;
+    height: 200vh;
     width: 100%;
-    background-image: url('/fond-orange.png');
+    background-image: url('/fond-blanc.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .kol-sasson{
@@ -118,7 +121,7 @@
 }
 
 .houppa-titre{
-    color: #D9D9D9;
+    color: #E46204;
     font-family: "Pinyon Script", serif;
     height: fit-content;
 }
@@ -143,14 +146,11 @@
     flex-direction: column;
     justify-content: center;
     color: #E46204;
-    background-color: #D9D9D9;
+
     opacity: 0.8;
     width: 90%;
-    border-top-left-radius: 50% 150px;
-    border-top-right-radius: 50% 150px;
-    border-bottom-right-radius: 50% 150px;
-    border-bottom-left-radius: 50% 150px;
-    padding-top: 85px;
+    
+    padding-top: 100px;
     padding-bottom: 80px;
 }
 
