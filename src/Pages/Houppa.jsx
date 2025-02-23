@@ -30,7 +30,6 @@ function Houppa(activeLanguage, handleLanguage){
                 <p className="houppa-reception">La Houppa sera suivie d'une réception</p>
                 <p className="houppa-pensee">"Une tendre pensée pour nos grands-parents toujours présents dans nos coeurs"</p>
             </div>
-            <img src="/houppa-bas.png" className="houppa-bas" />
         </div>
 
     )

@@ -18,7 +18,7 @@ function Home(){
                 <img src="fleur-home-gauche.png" className='fleur-home-gauche' />
                 <img src="fleur-home-droite.png" className='fleur-home-droite' />
             </div>
-            <img src="kol-sasson-blanc.png" className='kol-sasson'/>
+            <img src="kol-sasson-orange.png" className='kol-sasson'/>
             <Houppa activeLanguage='francais'/>
         </div>
 
