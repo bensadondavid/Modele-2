@@ -100,59 +100,70 @@
 /* Home */
 
 .home{
-    height: 200vh;
+    height: fit-content;
     width: 100%;
     background-image: url('/fond-orange.png');
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.fleurs-home{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fleur-home-droite, .fleur-home-gauche{
+    width: 180px;
+    height: 120px;
 }
 
 .kol-sasson{
-    height: 100px;
-    width: 300px;
+    height: 120px;
+    width: 350px;
     display: block;
-    margin: auto auto 50px auto;
+    margin: auto;
+    transform: translateY(-35px)
 }
 
 
 /* Houppa */
 
 .houppa{
+    width: 95%;
     height: fit-content;
+    background-image: url('/fond-blanc.png');
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    padding: 40px 0 70px 0;
+    border-top-left-radius: 50% 150px;
+    border-top-right-radius: 50% 150px;
+    border-bottom-left-radius: 50% 150px;
+    border-bottom-right-radius: 50% 150px;
+    transform: translateY(-20px);
+    color: #c85401;
 }
 
 .houppa-titre{
-    color: #ffff;
-    font-family: "Pinyon Script", serif;
+    font-family: "Luxurious Script", serif;
+    font-size: 40px;
     height: fit-content;
-}
-
-.houppa-fleur{
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.fleur-houppa-droite, .fleur-houppa-gauche{
-    width: 100px;
-    height: 110px;
+    text-align: center;
 }
 
 .houppa-card{
     height: fit-content;
-    margin: 50px auto auto auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #ffff;
-
-    opacity: 0.8;
     width: 90%;
-    
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 60px;
 }
 
 .parents{
@@ -183,7 +194,7 @@
     font-size: large;
     width: 80%;
     margin: 30px auto auto auto;
-    font-family: "Playfair", serif;
+    font-family: "Pinyon Script", serif;
     font-weight:lighter;
 }
 
@@ -191,7 +202,7 @@
     font-family: "Luxurious Script", serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 60px;
+    font-size: 70px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -227,5 +238,14 @@
     text-align: center;
     font-size: larger;
     width: 90%;
+}
+
+.houppa-bas{
+    width: 120px;
+    height: 60px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
 }
 
