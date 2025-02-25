@@ -1,9 +1,12 @@
-import { useState } from 'react';
+import { useContext } from "react";
+import { Context } from '../Context'
 import Houppa from "./Houppa"
 import Chabat from "./Chabat"
 import Form from "../Components/Form"
 
 function Home(){
+
+    const { language } = useContext(Context)
 
     return(
         <>

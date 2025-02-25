@@ -1,34 +1,26 @@
-// NE PAS OUBLIER D'INSTALLER ICS
-import React from "react";
-import { createEvent } from "ics";
+import { useContext } from "react";
+import { Context } from '../Context'
 
-const SaveTheDate = () => {
-  const handleDownload = () => {
-    // Définir les détails de l'événement
-    const event = {
-      start: [2025, 8, 24, 19, 15], // [YYYY, MM, DD, HH, MM]
-      duration: { hours: 4 },
-      title: "Save the Date: Lola & Hillel's wedding",
-      location: "Amaré, Ness Tsiona",
-    };
 
-    // Générer le fichier ICS
-    createEvent(event, (error, value) => {
-      if (error) {
-        console.error(error);
-        return;
-      }
+const WazeButton = () => {
 
-      // Créer un fichier Blob et ouvrir dans Safari
-      const blob = new Blob([value], { type: "text/calendar;charset=utf-8" });
-      const url = URL.createObjectURL(blob);
-      window.location.href = url; // Ouvrir dans Safari
-    });
+  const { language } = useContext(Context)
+
+  const handleOpenWaze = () => {
+    // Coordonnées de la destination (latitude et longitude)
+    const latitude = "31.915749"; 
+    const longitude = "34.778700";
+
+    // URL pour ouvrir Waze
+    const wazeUrl = `https://waze.com/ul?ll=${latitude},${longitude}&navigate=yes`;
+
+    // Redirection vers l'URL
+    window.location.href = wazeUrl;
   };
 
   return (
-    <button className="save-the-date" onClick={handleDownload}>{activeLanguage === 'francais' ? 'Ajouter au calendrier' : 'הוסף ליומן'}</button>
+    <button className="waze" onClick={handleOpenWaze}>{language === "francais" ? "Ouvrir dans Waze" : "מסלול ב-waze"}</button>
   );
 };
 
-export default SaveTheDate;
+export default WazeButton;

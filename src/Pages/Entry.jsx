@@ -1,7 +1,11 @@
+import { useContext } from "react";
+import { Context } from '../Context'
 import CountDown from '../Components/CountDown'
 import { Link } from 'react-router-dom'
 
 function Entry(){
+
+    const { language } = useContext(Context)
 
     return(
 
