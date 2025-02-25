@@ -99,7 +99,7 @@
 
 /* Home */
 
-.home{
+.home-1{
     height: fit-content;
     width: 100%;
     background-image: url('/fond-blanc.png');
@@ -128,6 +128,16 @@
     display: block;
     margin: auto;
     transform: translateY(-35px)
+}
+
+.home-2{
+    height: 150vh;
+    width: 100%;
+    background-image: url('/fond-blanc-retourne.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
 }
 
 

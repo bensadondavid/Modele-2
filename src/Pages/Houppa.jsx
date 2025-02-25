@@ -1,4 +1,4 @@
-function Houppa(activeLanguage, handleLanguage){
+function Houppa(){
 
     return(
 
