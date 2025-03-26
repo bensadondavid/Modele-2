@@ -14,10 +14,7 @@ function Entry(){
             <img src="logo-orange.png" className="logo-entry" />
             <CountDown />
             <Link to='/home' className='entry-lien'><button className='invit-button'>Voir l'invitation</button></Link>
-            <div className="fleurs-entry">
-                <img src="fleur-entry-gauche.png" className='fleur-entry-gauche' />
-                <img src="fleur-entry-droite.png" className='fleur-entry-droite' />
-            </div>
+           <img src="modele-2-fleur-entry.png" className="fleur-entry" />
         </div>
     )
 }

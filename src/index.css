@@ -8,6 +8,22 @@
     display: none !important;
 }
 
+@font-face{
+    font-family: "Lavonia";
+    src: url('/src/assets/fonts/EDLavonia-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.waze, .save-the-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
 
 /* Entry */
 
@@ -22,6 +38,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .bsd{
@@ -80,99 +97,97 @@
     font-family: "Bellefair", serif;
 }
 
-.fleurs-entry{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
+.fleur-entry{
     position: absolute;
+    height: 220px;
+    width: 220px;
     bottom: 0;
-}
-
-.fleur-entry-gauche, .fleur-entry-droite{
-    width: 180px;
-    height: 120px;
+    right: 0;
 }
 
 
 /* Home */
 
-.home-1{
+.home{
     height: fit-content;
     width: 100%;
-    background-image: url('/fond-blanc.png');
-    background-size: cover;
-    background-position: center;
+    background-color: #f0d3be;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.fleurs-home{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.fleur-3{
+    height: 300px;
+    width: 100vw;
 }
 
-.fleur-home-droite, .fleur-home-gauche{
-    width: 180px;
-    height: 120px;
+.fleur-4{
+    margin-top: 20px;
+    height: 200px;
+    width: 96%;
 }
 
-.kol-sasson{
-    height: 120px;
-    width: 350px;
-    display: block;
-    margin: auto;
-    transform: translateY(-35px)
+.fleur-5{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 200px;
+    width: 200px;
 }
-
-.home-2{
-    height: 150vh;
-    width: 100%;
-    background-image: url('/fond-blanc-retourne.png');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-}
-
 
 /* Houppa */
 
 .houppa{
     height: fit-content;
-    background-position: center;
-    background-size: cover;
-    margin: auto;
-    transform: translateY(-20px);
-    color: #c85401;
-}
-
-.houppa-titre{
-    font-family: "Luxurious Script", serif;
-    font-size: 40px;
-    height: fit-content;
-    text-align: center;
-}
-
-.houppa-card{
-    height: fit-content;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    align-items: center;
     padding-top: 60px;
+    color: #D06F2E;
+}
+
+.fleur-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 150px;
+}
+
+.fleur-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 150px;
+}
+
+.kol-sasson{
+    height: 120px;
+    width: 350px;
+    margin-top: 30px;
+}
+
+.houppa-titre{
+    font-family: "Lavonia";
+    font-size: 40px;
+    height: fit-content;
+    text-align: center;
+    transform: translateY(-30px);
 }
 
 .parents{
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: small;
     margin: 0 20px;
@@ -202,10 +217,10 @@
 }
 
 .houppa-noms{
-    font-family: "Luxurious Script", serif;
+    font-family: 'Lavonia';
     font-weight: 500;
     font-style: normal;
-    font-size: 70px;
+    font-size: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -243,12 +258,168 @@
     width: 90%;
 }
 
-.houppa-bas{
-    width: 120px;
-    height: 60px;
-    margin: auto;
-    position: absolute;
-    bottom: 0;
-    left: 35%;
+/* Chabat */
+
+.chabat{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #D06F2E;
 }
 
+.chabat-title{
+    font-family: "Lavonia";
+    font-size: 40px;
+    height: fit-content;
+    text-align: center;
+}
+
+.chabat-text{
+    text-align: center;
+    width: 90%;
+    height: fit-content;
+    margin: 30px auto;
+}
+
+.chabat-date, .chabat-endroit{
+    text-align: center;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.chabat-date{
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+/* Response */
+
+.response{
+    padding-bottom: 100px;
+    width: 100%;
+    height: fit-content;
+}
+
+.response-title{
+    font-family: "Lavonia";
+    font-size: 50px;
+    height: fit-content;
+    text-align: center;
+    color: #E46204;
+    margin: 30px auto;
+}
+
+
+/* Form */
+
+form{
+    height: fit-content;
+    width: 100%;
+    font-family: "Antic Didone", serif;
+    color: #E46204;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin: auto;
+}
+
+label{
+    margin: 10px 0 10px 20px;
+}
+
+.nom, .prenom, .person-number{
+    width: 85%;
+    height: 20px;
+    padding: 10px;
+    border: #D06F2E solid 1px;
+    background-color: #FFE3D2;
+    border-radius: 50% / 170px;
+    margin-top: 5px;
+}
+
+.label-textarea{
+    margin-left: 20px;
+    font-size: larger;
+}
+
+input[type = radio]{
+    margin-right: 10px;
+}
+
+.square-checkbox {
+    appearance: none; /* Supprime l'apparence par défaut */
+    height: 15px;
+    width: 15px;
+    background-color: transparent; /* Couleur de fond */
+    border: #D06F2E solid 1px;
+    border-radius: 50%; /* Pas de bordure arrondie pour un effet carré */
+    cursor: pointer;
+    position: relative; /* Nécessaire pour positionner la flèche */
+    margin-left: 10px;
+}
+
+.square-checkbox:checked::after {
+    content: ''; /* Pseudo-élément pour la flèche */
+    position: absolute;
+    top: 2px; /* Position verticale */
+    left: 4px; /* Position horizontale */
+    width: 3px; /* Largeur de la flèche */
+    height: 5px; /* Hauteur de la flèche */
+    border: #D06F2E solid 1px;
+    border-width: 0 2px 2px 0; /* Taille des lignes de la flèche */
+    transform: rotate(45deg); /* Inclinaison pour créer une flèche */
+}
+
+textarea{
+    width: 85%;
+    height: 40px;
+    padding: 10px;
+    background-color: #FFE3D2;
+    border: #D06F2E solid 1px;
+    border-radius: 50% / 170px; 
+    margin-left: 15px;
+}
+
+.submit-button{
+    height: 40px;
+    width: 170px;
+    margin: 30px auto;
+    border: #D06F2E solid 1px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #E46204;
+    font-family: "Antic Didone", serif;
+    letter-spacing: 2px;
+}
+
+/* Presence */
+
+.presence{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.present{
+    display: flex;
+    flex-direction: column;
+}
+
+.present input{
+    margin-right: 10px; 
+}
+
+.present .square-checkbox{
+    margin-left: 25px;
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
